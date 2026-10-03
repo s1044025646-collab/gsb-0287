@@ -1,0 +1,18 @@
+{
+  "name": "robinhood-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Robin Hood 哈希表探测与后移删除回放实验后端",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/*.test.js\"",
+    "start": "npm run build && node dist/src/cli.js serve",
+    "demo": "npm run build && node dist/src/demo.js",
+    "cli": "node dist/src/cli.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/node": "^22.0.0"
+  }
+}
